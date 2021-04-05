@@ -1,4 +1,43 @@
 # Zendesk Product Security
+## Setting up
+Platform: Ubuntu 18.04 (Or any Linux based platform)
+1. Ensure that nodejs and npm are installed on the machine 
+2. Clone the repository onto the machine
+3. Navigate to /project folder
+4. Locate and unzip rockyou.zip in the same folder
+5. (Optional) Locate the file `ca.crt` in the /cert folder
+6. (Optional) Add `ca.crt` as a trusted root certificate in your preferred browser (Mozilla Firefox etc.)
+6. Open the terminal in the folder and run `npm i`
+7. In the same terminal, run `npm start`
+8. Visit https://localhost:3443 
+
+## List of mechanisms implemented
+1. Input sanitization and validation 
+2. Password hashed
+bcrypt was used to hash and store the password. 10 rounds of salt was used.
+3. Prevention of timing attacks
+Implemented by bcrypt, the bcrypt comparison function is not susceptible to timing attacks
+4. Logging
+Currently not implemented
+5. CSRF prevention
+Currently not implemented
+6. Multi factor authentication
+Currently not implemented
+7. Password reset / forget password mechanism
+Currently not implemented
+8. Account lockout
+Currently not implemented
+9. Cookie
+express-session and passportjs was used for authentication and user sessions.
+10. HTTPS
+Implemented with a self-signed certificate
+11. Known password check
+Registered passwords are checked against the rockyou.txt list. Any passwords in the list are rejected
+
+
+
+
+
 ### The Zendesk Product Security Challenge
 
 Hello friend,
