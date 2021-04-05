@@ -41,15 +41,15 @@ but nevertheless I still enjoyed this learning process. One of my main weakness 
 I will take note of this in future by ensuring enough time for my projects as well as seeking help when needed.
 
 With the deadline over, I plan to slowly work on the remaining functionalities. On first glance, some functionalities like account lockout looks simple. However, other features like MFA and password reset seems complicated. However I am intrigured by how it works 
-and I'll continue to work on this project on a separate repository/branch. 
+and I'll continue to work on this project on a separate branch (https://github.com/JustinnT/product_security_challenge/tree/add_features). 
 
 As a self note, in order of importance, I plan to work on these few features:
-1. Account lockout
-2. Password reset
-3. Input sanitization
-4. MFA
-5. Logging and CSRF
-6. Setting up a database to store user credentials
+1. Account lockout (Perhaps add a counter along with user credentials, after 5 tries it will lock the account and send a notification e-mail to the registered e-mail address. Also can record IP geolocation such that when a login is made with a different location, can send notification to registered e-mail.)
+2. Password reset (Also can include a reset function for lost QR authenticators for MFA)
+3. Input sanitization (Set minimum password length/strength, as well as validating inputs to prevent SQL injections when the database is up. Can also include a dynamic password strength check on client side.)
+4. MFA (Using speakeasy, QR based 2FA authentication.)
+5. Logging and CSRF (Apparently passportJS offers CSRF functionalities, will have to research more on how to enable it)
+6. Setting up a database to store user credentials (mongoDB)
 
 Once again thank you zendesk for extending this opportunity to me!
 
