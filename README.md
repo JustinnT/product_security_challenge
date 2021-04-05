@@ -12,7 +12,8 @@ Platform: Ubuntu 18.04 (Or any Linux based platform)
 8. Visit https://localhost:3443 
 
 ## List of mechanisms implemented
-1. Input sanitization and validation \
+1. Input sanitization and validation\
+Basic validation to ensure that usernames or emails are not repeated
 2. Password hashed\
 bcrypt was used to hash and store the password. 10 rounds of salt was used.
 3. Prevention of timing attacks\
@@ -34,7 +35,23 @@ Implemented with a self-signed certificate
 11. Known password check\
 Registered passwords are checked against the rockyou.txt list. Any passwords in the list are rejected
 
+## Reflection and future work
+I would like to thank the zendesk team for this challenge and extending this opportunity to me. I learnt a lot and had fun doing this challenge despite the busy week. Unfortuneately I was unable to fully implement the list and I'm a little disappointed in myself
+but nevertheless I still enjoyed this learning process. One of my main weakness was definitely time prioritization as I was stuck in implementing one of the features, and in addition school work, which resulted in the short list of mechanisms implemented. 
+I will take note of this in future by ensuring enough time for my projects as well as seeking help when needed.
 
+With the deadline over, I plan to slowly work on the remaining functionalities. On first glance, some functionalities like account lockout looks simple. However, other features like MFA and password reset seems complicated. However I am intrigured by how it works 
+and I'll continue to work on this project on a separate repository/branch. 
+
+As a self note, in order of importance, I plan to work on these few features:
+1. Account lockout
+2. Password reset
+3. Input sanitization
+4. MFA
+5. Logging and CSRF
+6. Setting up a database to store user credentials
+
+Once again thank you zendesk for extending this opportunity!
 
 
 
