@@ -51,9 +51,9 @@ As a self note, in order of importance, I plan to work on these few features:
 5. Logging and CSRF
 6. Setting up a database to store user credentials
 
-Once again thank you zendesk for extending this opportunity!
+Once again thank you zendesk for extending this opportunity to me!
 
-=======================================================================================================================
+=====================================================================
 
 ### The Zendesk Product Security Challenge
 
