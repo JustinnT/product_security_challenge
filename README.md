@@ -12,26 +12,26 @@ Platform: Ubuntu 18.04 (Or any Linux based platform)
 8. Visit https://localhost:3443 
 
 ## List of mechanisms implemented
-1. Input sanitization and validation 
-2. Password hashed
+1. Input sanitization and validation \
+2. Password hashed\
 bcrypt was used to hash and store the password. 10 rounds of salt was used.
-3. Prevention of timing attacks
+3. Prevention of timing attacks\
 Implemented by bcrypt, the bcrypt comparison function is not susceptible to timing attacks
-4. Logging
+4. Logging\
 Currently not implemented
-5. CSRF prevention
+5. CSRF prevention\
 Currently not implemented
-6. Multi factor authentication
+6. Multi factor authentication\
 Currently not implemented
-7. Password reset / forget password mechanism
+7. Password reset / forget password mechanism\
 Currently not implemented
-8. Account lockout
+8. Account lockout\
 Currently not implemented
-9. Cookie
+9. Cookie\
 express-session and passportjs was used for authentication and user sessions.
-10. HTTPS
+10. HTTPS\
 Implemented with a self-signed certificate
-11. Known password check
+11. Known password check\
 Registered passwords are checked against the rockyou.txt list. Any passwords in the list are rejected
 
 
